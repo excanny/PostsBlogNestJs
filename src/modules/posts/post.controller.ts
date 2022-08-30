@@ -6,8 +6,8 @@ import { PostService } from './post.service';
 export class PostController {
     constructor(private readonly postService: PostService) {}
 
-    @Post('/create')
-    async register(@Body() postData: CreatePostDto) {
-        return await this.postService.createPost(postData);
-      }
+    // @Post('/create')
+    // async register(@Body() postData: CreatePostDto) {
+    //     return await this.postService.createPost(postData);
+    //   }
 }

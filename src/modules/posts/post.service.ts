@@ -22,15 +22,6 @@ export class PostService {
     await this.postRepository.delete(id);
   }
 
-  async createPost(postDto: CreatePostDto): Promise<Post> {
-    const post = new Post();
-    post.categoryId = postDto.categoryId;
-    post.title = postDto.title;
-    post.content = postDto.content;
-    //post.user = postDto.
-    return this.postRepository.save(post);
-  }
-
   async onModuleInit() {
     try {
 
